@@ -4,9 +4,9 @@
 Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami mengembangkan sebuah program Python untuk memesan tiket bioskop.
 
 ## Daftar Anggota Kelompok
-- **[Fahrul Rafi Widodo]** (NIM: [ I0324078 ])
-- **[Hilmy Ashshiddiqi]** (NIM: [ I0324081 ])
-- **[Muhamad Khoirun Nur]** (NIM: [ I0324085 ])
+- **[Fahrul Rafi Widodo]** (NIM: I0324078)
+- **[Hilmy Ashshiddiqi]** (NIM: I0324081)
+- **[Muhamad Khoirun Nur]** (NIM: I0324085)
 
 ## Fitur Utama
 1. **[Halaman Utama]** - [Menampilkan pilihan sign in, sign up, dan exit].
@@ -18,41 +18,49 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 
 ## Struktur Proyek
 ```
-project-folder/
-|-- src/
-|   |-- main.py       # File utama program
-|   |-- [modul_1].py  # Modul tambahan jika ada
-|-- data/
-|   |-- dataset.csv   # Contoh file data (jika diperlukan)
-|-- README.md         # File dokumentasi proyek
-|-- requirements.txt  # Daftar dependensi Python (opsional)
+Kelompok-4/
+|-- main.py
+|-- hal_utama.py
+|-- hal_sigh_up.py
+|-- hal_sigh_in.py
+|-- hal_menu.py
+|-- hal_film.py
+|-- hal_kursi.py
+|-- hal_konfirmasi.py
+|-- hal_cancel.py
+|-- hal_penutup.py
+|-- hal_admin.py
+|-- hal_tambah_film.py
+|-- hal_hapus_film.py
+|-- hal_reset_kursi.py
+|-- hal_histori_pesanan.py
+|-- user_data.csv
+|-- admin_data.csv
+|-- film_data.csv
+|-- kursi_pesanan.csv
+|-- pesanan_data.csv
+|-- tiket.txt
+|-- README.md
 ```
 
 ## Cara Menjalankan Proyek
-1. Pastikan Python 3.x sudah terinstall di komputer Anda.
+1. Pastikan Python 3.13.0 dan library pandas dan pillow sudah terinstall di komputer Anda.
 2. Clone repositori ini:
    ```bash
-   git clone https://github.com/Hil-ash/Kelompok-4.git (sek iseh bingung iki)
+   git clone https://github.com/Hil-ash/Kelompok-4.git
    ```
 3. Masuk ke direktori proyek:
    ```bash
-   cd [repo-name]
+   cd Kelompok-4
    ```
-4. (Opsional) Instal dependensi dengan pip:
+4. Jalankan file utama:
    ```bash
-   pip install -r requirements.txt
-   ```
-5. Jalankan file utama:
-   ```bash
-   python src/main.py
+   python main.py
    ```
 
 ## Teknologi yang Digunakan
 - Python 3.13.0
-- Library tkinter, pandas, pillow, dan re
+- Pandas (untuk manipulasi data)
+- Pillow (untuk memproses gambar)
 
-## Kontak (opsional kontribusi karo lisensi ra usah)
-Jika ada pertanyaan atau saran, silakan hubungi kami melalui email:
-- **[Nama 1]**: [email 1]
-- **[Nama 2]**: [email 2]
 
