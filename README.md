@@ -19,6 +19,8 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 ## Struktur Proyek
 ```
 Kelompok-4/
+|-- Gambar Film/
+    |-- 
 |-- main.py
 |-- hal_utama.py
 |-- hal_sigh_up.py
