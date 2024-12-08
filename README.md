@@ -11,7 +11,7 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 ## Fitur Utama
 1. **[Halaman Utama]** - [Menampilkan pilihan sign in, sign up, dan exit].
 2. **[Fitur Login dan Registrasi]** - [Sign in untuk masuk sebagai pengguna atau admin dan sign up untuk pendaftaran pengguna baru].
-3. **[Fitur Menu Pengguna]** - [Pesan tiket untuk pilih film, kursi dan konfirmasi pesanan sadangkan cancel tiket untuk Melihat daftar tiket yang sudah dipesan dan membatalkannya].
+3. **[Fitur Menu Pengguna]** - [Pesan tiket untuk memilih film, kursi dan konfirmasi pesanan ,sadangkan cancel tiket digunkan untuk Melihat daftar tiket yang sudah dipesan dan membatalkannya].
 4. **[Fitur Admin]** - [Dapat menghapus film, menambah film, reset kursi, dan melihat riwayat pemesanan].
 5. **[Konfirmasi dan Cetak Tiket]** - [Menampilkan struk pemesanan tiket dan menyimpan tiket dalam file .txt].
 6. **[Manajemen Data]** - [Menggunakan file csv untuk menyimpan data akun pengguna, data akun admin, data film (judul, harga, gambar), data kursi yang dipesan, dan riwayat pemesanan].
