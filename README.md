@@ -20,7 +20,17 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 ```
 Kelompok-4/
 |-- Gambar Film/
-    |-- 
+    |-- IMG-20241208-WA0006.jpg
+    |-- IMG-20241208-WA0007.jpg
+    |-- IMG-20241208-WA0008.jpg
+    |-- IMG-20241208-WA0009.jpg
+    |-- IMG-20241208-WA0011.jpg
+    |-- IMG-20241208-WA0012.jpg
+    |-- IMG-20241208-WA0013.jpg
+    |-- IMG-20241208-WA0014.jpg
+    |-- New-Project-57.jpg
+    |-- WhatsApp Image 2024-08-17 at 19.58.52_68a180e2.jpg
+    |-- tenki no ko.jpeg.jpg
 |-- main.py
 |-- hal_utama.py
 |-- hal_sigh_up.py
