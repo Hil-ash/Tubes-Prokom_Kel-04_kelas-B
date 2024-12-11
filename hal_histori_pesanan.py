@@ -6,7 +6,7 @@ from tkinter import messagebox, ttk,filedialog
 from PIL import Image, ImageTk
 import re
 
-def hal_histori_pesanan():
+def hal_histori_pesanan(username):
     hal_histori_pesanan = tk.Tk()
     hal_histori_pesanan.title("Sistem Pemesanan Tiket Bioskop")
     hal_histori_pesanan.geometry("1200x750")
@@ -67,7 +67,7 @@ def hal_histori_pesanan():
     def open_hal_admin():
         hal_histori_pesanan.destroy()
         from hal_admin import hal_admin
-        hal_admin()
+        hal_admin(username)
 
     back_button = tk.Button(hal_histori_pesanan, width=8, height=1 ,text="balek", fg="#000000", bg="#C8102E", font=('Georgia', 12),command=open_hal_admin)
     back_button.place(x=20, y=700 - 20 )
