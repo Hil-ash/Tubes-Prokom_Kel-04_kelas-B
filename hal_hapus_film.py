@@ -6,7 +6,7 @@ from tkinter import messagebox, ttk,filedialog
 from PIL import Image, ImageTk
 import re
 
-def hal_hapus_film():
+def hal_hapus_film(username):
     hal_hapus_film = tk.Tk()
     hal_hapus_film.title("Sistem Pemesanan Tiket Bioskop")
     hal_hapus_film.geometry("1200x750")
@@ -64,7 +64,7 @@ def hal_hapus_film():
                 messagebox.showerror("Error", "File kursi_pesanan.csv tidak ditemukan.")            
             hal_hapus_film.destroy()
             from hal_tambah_film import hal_tambah_film
-            hal_tambah_film()
+            hal_tambah_film(username)
             
         delete_button  = tk.Button(frame, text="Busak",fg="#000000", bg="#C8102E",font=('Georgian', 8), command=lambda film_judul=row["judul"]: tambah_film(film_judul))
         delete_button.pack(pady=5)
@@ -72,7 +72,7 @@ def hal_hapus_film():
     def open_hal_admin():
         from hal_admin import hal_admin
         hal_hapus_film.destroy()
-        hal_admin()
+        hal_admin(username)
 
     back_button = tk.Button(hal_hapus_film, width=8, height=1 ,text="Balek" ,fg="#000000", bg="#C8102E", font=('Georgia', 12),command=open_hal_admin)
     back_button.place(x=20, y=700 - 20 )
