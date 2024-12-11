@@ -133,7 +133,7 @@ def hal_kursi(film_judul,username):
     def open_hal_film():
         from hal_film import hal_film
         hal_kursi.destroy()
-        hal_film()
+        hal_film(username)
         
     back_button = tk.Button(hal_kursi, width=8, height=1 ,text="balek",fg="#000000", bg="#C8102E",font=('Georgian', 12),command=open_hal_film)
     back_button.place(x=20, y=700 - 20 )
