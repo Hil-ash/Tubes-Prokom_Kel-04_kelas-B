@@ -24,15 +24,15 @@ def hal_admin(username):
     def open_hapus_film():
         from hal_hapus_film import hal_hapus_film
         hal_admin.destroy()
-        hal_hapus_film()
+        hal_hapus_film(username)
     def open_histori_pesanan():
         from hal_histori_pesanan import hal_histori_pesanan
         hal_admin.destroy()
-        hal_histori_pesanan()
+        hal_histori_pesanan(username)
     def open_reset_kursi():
         from hal_reset_kursi import hal_reset_kursi
         hal_admin.destroy()
-        hal_reset_kursi()
+        hal_reset_kursi(username)
     def open_cek():
         from hal_film import hal_film
         hal_admin.destroy()
