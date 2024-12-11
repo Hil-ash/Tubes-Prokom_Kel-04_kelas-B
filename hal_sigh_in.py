@@ -31,6 +31,7 @@ def hal_Sigh_in():
     def Sign_in():
         A1 = isi_username.get()
         A2 = isi_password.get()
+        username = A1
 
         if A1 == "" or A2 == "":
             messagebox.showinfo("Error", "Isi semuanya")
@@ -48,8 +49,6 @@ def hal_Sigh_in():
                     except ValueError:
                         continue
         if sukses:
-            global username
-            username = A1
             messagebox.showinfo("Informasi", "Login Berhasil")
             from hal_menu import hal_menu
             hal_Sigh_in.destroy()
@@ -71,7 +70,7 @@ def hal_Sigh_in():
                 messagebox.showinfo("Informasi", "Login Berhasil sebagai admin")
                 hal_Sigh_in.destroy()
                 from hal_admin import hal_admin
-                hal_admin()
+                hal_admin(username)
             else:
                 messagebox.showinfo("Informasi", "Anda Belum Terdaftar")
 
