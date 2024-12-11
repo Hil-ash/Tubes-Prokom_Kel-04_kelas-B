@@ -6,7 +6,7 @@ from tkinter import messagebox, ttk,filedialog
 from PIL import Image, ImageTk
 import re
 
-def hal_tambah_film():
+def hal_tambah_film(username):
     hal_tambah_film = tk.Tk()
     hal_tambah_film.title("Sistem Pemesanan Tiket Bioskop")
     hal_tambah_film.geometry("1200x750")
@@ -52,7 +52,7 @@ def hal_tambah_film():
         messagebox.showinfo("Success", f"Film '{nama_film}' berhasil ditambahkan.")
         hal_tambah_film.destroy()
         from hal_admin import hal_admin
-        hal_admin()
+        hal_admin(username)
         
     button_tambah = tk.Button(hal_tambah_film, text="Tambahkan",fg="#000000", bg="#C8102E",font=('Georgian', 16), command=tambahkan_film)
     button_tambah.grid(row=2, column=1)
