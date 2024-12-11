@@ -64,7 +64,7 @@ def hal_film(username):
     def open_hal_sign_in():
         from hal_menu import hal_menu
         hal_film.destroy()
-        hal_menu()
+        hal_menu(username)
         
     back_button = tk.Button(hal_film, width=8, height=1 ,text="Balek" ,fg="#000000", bg="#C8102E",font=('Georgia', 12),command=open_hal_sign_in)
     back_button.place(x=20, y=700 - 20 )
