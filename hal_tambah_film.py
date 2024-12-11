@@ -21,16 +21,16 @@ def hal_tambah_film(username):
     judul = tk.Label(hal_tambah_film, text="Tambah Film Anyar", font=('Georgia', 34), fg="#C8102E", bg="#000000")
     judul.grid(row=0,column=0 ,columnspan=3, sticky="we")
     
-    frame1 = tk.Frame(hal_tambah_film, bg="lightblue", width=300, height=200)
+    frame1 = tk.Frame(hal_tambah_film, bg="#FFD700", width=300, height=200)
     frame1.grid(row=1, column=1, padx=10)
     frame1.pack_propagate(False)
     
-    subjudul= tk.Label(frame1, text="Film Anyar", fg="#C8102E",bg="lightblue",font=('Georgian', 18))
+    subjudul= tk.Label(frame1, text="Film Anyar", fg="#C8102E",bg="#FFD700",font=('Georgian', 18))
     subjudul.pack(pady=10,padx=2)
-    tk.Label(frame1, text="Jeneng Film",fg="#000000",font=('Georgian', 15), bg="lightblue").pack(pady=5)
+    tk.Label(frame1, text="Jeneng Film",fg="#000000",font=('Georgian', 15), bg="#FFD700").pack(pady=5)
     entry_nama_film = tk.Entry(frame1)
     entry_nama_film.pack(pady=5)
-    tk.Label(frame1, text="Rego",fg="#000000",font=('Georgian', 15), bg="lightblue").pack(pady=5)
+    tk.Label(frame1, text="Rego",fg="#000000",font=('Georgian', 15), bg="#FFD700").pack(pady=5)
     entry_harga = tk.Entry(frame1)
     entry_harga.pack(pady=5)
         
