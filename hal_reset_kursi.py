@@ -6,7 +6,7 @@ from tkinter import messagebox, ttk,filedialog
 from PIL import Image, ImageTk
 import re
 
-def hal_reset_kursi():
+def hal_reset_kursi(username):
     hal_reset_kursi = tk.Tk()
     hal_reset_kursi.title("Sistem Pemesanan Tiket Bioskop")
     hal_reset_kursi.geometry("1200x750")
@@ -80,7 +80,7 @@ def hal_reset_kursi():
         messagebox.showinfo("Informasi", f"Kursi untuk film '{judul}' telah direset.")
         hal_reset_kursi.destroy()
         from hal_admin import hal_admin
-        hal_admin()
+        hal_admin(username)
     
     def reset_semua():
         try:
@@ -95,7 +95,7 @@ def hal_reset_kursi():
             messagebox.showinfo("Informasi", "Semua pesanan kursi telah dihapus.")
             hal_reset_kursi.destroy()
             from hal_admin import hal_admin
-            hal_admin()
+            hal_admin(username)
         except Exception as e:
             messagebox.showerror("Error", f"Gagal menghapus pesanan: {e}") 
     
@@ -108,7 +108,7 @@ def hal_reset_kursi():
     def open_hal_admin():
         from hal_admin import hal_admin
         hal_reset_kursi.destroy()
-        hal_admin()
+        hal_admin(username)
 
     back_button = tk.Button(hal_reset_kursi, width=8, height=1 ,text="Balek" ,font=('Georgia', 12), bg="#C8102E", fg="#000000",command=open_hal_admin)
     back_button.place(x=20, y=700 - 20 )
