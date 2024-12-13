@@ -8,6 +8,9 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 - **[Hilmy Ashshiddiqi]** (NIM: I0324081)
 - **[Muhamad Khoirun Nur]** (NIM: I0324085)
 
+## Flowchart
+![Flowchart Kel 4](https://github.com/user-attachments/assets/8ae345d9-ce6c-48ac-ab73-114b3e7bff31)
+
 ## Fitur Utama
 1. **[Halaman Utama]** - [Menampilkan pilihan sign in, sign up, dan exit].
 2. **[Fitur Login dan Registrasi]** - [Sign in untuk masuk sebagai pengguna atau admin dan sign up untuk pendaftaran pengguna baru].
