@@ -35,26 +35,28 @@ def hal_histori_pesanan(username):
         if histori_data is not None:  # Pastikan histori_data tidak None
             # Menambahkan data ke Treeview
             for index, row in histori_data.iterrows():
-                tree.insert("", "end", values=(row["film_judul"], row["jumlah_kursi"], row["kode_kursi"], row["username"]))
+                tree.insert("", "end", values=(row["film_judul"], row["jumlah_kursi"], row["kode_kursi"], row["username"], row["waktu"]))
     
     frame = tk.Frame(hal_histori_pesanan, bg="lightblue")
     frame.pack(pady=20)
     
-    columns = ("Film", "Jumlah Kursi", "Kode Kursi", "Username")
+    columns = ("Film", "Jumlah Kursi", "Kode Kursi", "Username","Waktu")
     tree = ttk.Treeview(frame, columns=columns, show='headings')
     tree.pack(side="left")
     
     # Mengatur lebar kolom
     tree.column("Film", width=150)
     tree.column("Jumlah Kursi", width=100)
-    tree.column("Kode Kursi", width=100)
+    tree.column("Kode Kursi", width=170)
     tree.column("Username", width=100)
+    tree.column("Waktu", width=150)
 
     # Mengatur header kolom
     tree.heading("Film", text="Film")
     tree.heading("Jumlah Kursi", text="Jumlah Kursi")
     tree.heading("Kode Kursi", text="Kode Kursi")
     tree.heading("Username", text="Username")
+    tree.heading("Waktu", text="Waktu")
     
     # Menampilkan histori pemesanan
     show_pesanan_data(tree)
