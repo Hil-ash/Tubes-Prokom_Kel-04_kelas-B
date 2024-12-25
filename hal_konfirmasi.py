@@ -5,6 +5,7 @@ from tkinter import *
 from tkinter import messagebox, ttk,filedialog
 from PIL import Image, ImageTk
 import re
+from datetime import datetime
 
 def hal_konfirmasi(film_judul, pilihan_kursi, harga_tiket, username):
     hal_konfirmasi = tk.Tk()
@@ -50,8 +51,9 @@ def hal_konfirmasi(film_judul, pilihan_kursi, harga_tiket, username):
         # Hitung jumlah kursi
             jumlah_kursi = len(pilihan_kursi)
             kode_kursi = '; '.join(pilihan_kursi)  # Menggabungkan kode kursi menjadi satu string
+            waktu = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            data_to_save = f"{film_judul},{jumlah_kursi},{kode_kursi},{username}\n"
+            data_to_save = f"{film_judul},{jumlah_kursi},{kode_kursi},{username},{waktu}\n"
 
             with open("pesanan_data.csv", 'a') as file:  # 'a' mode untuk menambah data
                 file.write(data_to_save)  # Tulis data pesanan
