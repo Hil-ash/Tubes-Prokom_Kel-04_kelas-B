@@ -11,6 +11,9 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 ## Flowchart
 ![Flowchart Kel 4](https://github.com/user-attachments/assets/8ae345d9-ce6c-48ac-ab73-114b3e7bff31)
 
+## Revisi Flowchart
+
+
 ## Fitur Utama
 1. **[Halaman Utama]** - [Menampilkan pilihan sign in, sign up, dan exit].
 2. **[Fitur Login dan Registrasi]** - [Sign in untuk masuk sebagai pengguna atau admin dan sign up untuk pendaftaran pengguna baru].
@@ -77,5 +80,7 @@ Kelompok-4/
 - Python 3.13.0
 - Pandas (untuk manipulasi data)
 - Pillow (untuk memproses gambar)
+- Datetime (untuk menyediakan kelas dan fungsi untuk bekerja dengan tanggal dan waktu)
 
-
+## Sitemap
+![Sitemap](https://github.com/user-attachments/assets/7c69650d-99cc-43d7-93ce-eb6228415990)
