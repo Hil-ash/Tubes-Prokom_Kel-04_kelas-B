@@ -12,6 +12,7 @@ Proyek ini merupakan bagian dari tugas kelompok dalam mata kuliah prokom. Kami m
 ![Flowchart Kel 4](https://github.com/user-attachments/assets/8ae345d9-ce6c-48ac-ab73-114b3e7bff31)
 
 ## Revisi Flowchart
+![prokom](https://github.com/user-attachments/assets/a0adccb1-38d8-4b70-a581-4b9b238bccf1)
 
 
 ## Fitur Utama
